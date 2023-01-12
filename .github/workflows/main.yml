@@ -1,4 +1,5 @@
 name: Flutter Web
+
 on:
   push:
     branches:
@@ -17,7 +18,7 @@ jobs:
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter build web --release
-      - run: 
+      - run: |
           cd build/web
           git init
           # type configurations: your user.email and user.name followed lines 
